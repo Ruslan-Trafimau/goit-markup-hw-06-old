@@ -7,13 +7,6 @@
     display: none;
   }
 
-  .header-menu {
-    display: none;
-  }
-  .header-adress {
-    display: none;
-  }
-
   .benefits-subtitle {
     font-size: 36px;
     font-weight: 700;
@@ -27,22 +20,28 @@
     letter-spacing: 0.32px;
   }
 }
-/*--------------------------------------*/
+/*--------------------------------------
 @media screen and (max-width: 428px) {
   .benefits-subtitle {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .header-menu {
+    display: none;
+  }
+  .header-adress {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 428px) {
   .container {
-    max-width: 396px;
+    max-width: 428px;
   }
 
   .header-container {
-    display: flex;
     width: 428px;
     height: 70px;
   }
@@ -142,7 +141,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-1.jpg);
+      url(../images/people-office-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -165,7 +164,7 @@
   }
 
   .hero-btn {
-    margin-left: 75px;
+    margin-left: 0px;
     margin-bottom: 112px;
   }
 
@@ -294,19 +293,67 @@
     max-width: 768px;
   }
 
+  .header {
+    height: 72px;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .hero {
+    max-width: 768px;
+    height: 436px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-title {
+    display: flex;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    color: var(--white-color);
+    padding-top: 112px;
+    padding-bottom: 72px;
+    width: 496px;
+    max-height: 120px;
+    text-align: center;
+  }
+
+  .mobile-button {
+    display: none;
+  }
+
   .benefits-item {
-    width: unset;
+    min-width: 356px;
     width: calc((100% - 48px) / 2);
   }
 
-  .benefits {
-    padding: 96px 0 96px 0;
+  .benefits-item-text {
+    padding-bottom: 72px;
   }
 
-  .our-team > .container {
-    max-width: 606px;
+  .benefits {
+    padding: 96px 0 24px 0;
+  }
+
+  .our-team > container {
+    max-width: 552px;
   }
   .our-team-images {
+    max-width: 552px;
     gap: 24px;
   }
 
@@ -319,7 +366,7 @@
     padding: 96px 0 96px 0;
   }
 
-  .customers > .container {
+  customers > container {
     max-width: 606px;
   }
 
