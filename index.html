@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <!--
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -56,9 +55,13 @@
             </li>
           </ul>
         </address>
+        <button type="button" data-modal-open class="mobile-button">
+          <svg class="mobile-button-logo" width="32" height="22">
+            <use href="./images/icons.svg#charm:menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
-    -->
 
     <main>
       <section class="container hero">
@@ -505,7 +508,7 @@
         </div>
       </section>
     </main>
-    <!--
+
     <footer class="footer">
       <div class="container footer-container">
         <div class="f-logo">
@@ -594,7 +597,7 @@
         </div>
       </div>
     </footer>
-    -->
+
     <!--
     <div data-modal class="modal is-hidden">
       <div class="modal-window">
@@ -678,8 +681,105 @@
         </form>
       </div>
     </div>
+        -->
+
+    <!--------------------->
+    <div data-modal class="modal is-hidden">
+      <div class="mobile-modal-window">
+        <button type="button" data-modal-close class="modal-button">
+          <svg class="modal-button-logo" width="8" height="8">
+            <use href="./images/icons.svg#icon-vector"></use>
+          </svg>
+        </button>
+        <p class="modal-p"></p>
+        <div>
+          <nav class="mobile-nav">
+          <ul class="mobile-list list">
+            <li class="mobile-pass">
+              <a href="./index.html" class="mobile-menu mobile-studio link">Studio</a>
+            </li>
+            <li class="mobile-pass">
+              <a href="./portfolio.html" class="mobile-menu link">Portfolio</a>
+            </li>
+            <li class="mobile-pass">
+              <a href="" class="mobile-menu link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="list link">
+            <li class="mobile-tel-pass">
+              <a class="mobile-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-mail-pass">
+              <a class="mobile-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+                <div>
+          <ul class="mobile-icons list">
+            <li class="f-icon">
+              <a
+                class="f-link"
+                href=""
+                aria-label="instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="f-soc-logo" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="f-icon">
+              <a
+                class="f-link"
+                href=""
+                aria-label="twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="f-soc-logo" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="f-icon">
+              <a
+                class="f-link"
+                href=""
+                aria-label="facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="f-soc-logo" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="f-icon">
+              <a
+                class="f-link"
+                href=""
+                aria-label="linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg class="f-soc-logo" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
 
     <script src="./js/modal.js"></script>
-    -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

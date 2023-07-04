@@ -624,12 +624,12 @@ img {
 }
 
 .f-logo {
-  margin-right: 120px;
+  /*margin-right: 120px;*/
   align-items: baseline;
 }
 
 .footer-logo {
-  display: inline-block;
+  /*display: inline-block;*/
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -638,7 +638,7 @@ img {
   color: var(--blue-color);
   background: var(--second-color);
   text-transform: uppercase;
-  margin-bottom: 16px;
+  /*margin-bottom: 16px;*/
 }
 
 .footer-p-logo {
@@ -658,14 +658,15 @@ img {
 
 .footer {
   background: var(--second-color);
-  padding: 100px 0;
+  /*padding: 100px 0;*/
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  /*display: flex;
+  align-items: baseline;*/
 }
 
 .footer-p-soc {
@@ -964,7 +965,7 @@ img {
 }
 
 .subscribe {
-  padding-left: 128px;
+  /*padding-left: 128px;*/
 }
 
 .subscribe-p {
@@ -977,15 +978,15 @@ img {
 }
 
 .subscribe-form {
-  display: flex;
-  gap: 24px;
+  /*display: flex;
+  gap: 24px;*/
 }
 
 .subscribe-label {
 }
 
 .subscribe-input {
-  width: 264px;
+  /*width: 264px;*/
   height: 40px;
   border: 1px solid #ffffff;
   background-color: transparent;

@@ -7,6 +7,13 @@
     display: none;
   }
 
+  .header-menu {
+    display: none;
+  }
+  .header-adress {
+    display: none;
+  }
+
   .benefits-subtitle {
     font-size: 36px;
     font-weight: 700;
@@ -20,7 +27,7 @@
     letter-spacing: 0.32px;
   }
 }
-
+/*--------------------------------------*/
 @media screen and (max-width: 428px) {
   .benefits-subtitle {
     display: flex;
@@ -32,6 +39,101 @@
 @media screen and (min-width: 428px) {
   .container {
     max-width: 396px;
+  }
+
+  .header-container {
+    display: flex;
+    width: 428px;
+    height: 70px;
+  }
+
+  .header-logo {
+    margin-top: 25.5px;
+    margin-bottom: 23.5px;
+  }
+
+  .mobile-modal-window {
+    padding: 80px 24px 24px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 428px;
+    min-height: 796px;
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-button {
+    border: none;
+    background-color: #ffffff;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .mobile-menu {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-decoration: none;
+    list-style: none;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-list {
+    padding-bottom: 244px;
+  }
+
+  .mobile-studio {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-decoration: none;
+    color: #404bbf;
+    padding-bottom: 40px;
+  }
+
+  .mobile-pass {
+    padding-bottom: 40px;
+  }
+
+  .mobile-tel-pass {
+    padding-bottom: 40px;
+  }
+
+  .mobile-mail-pass {
+    padding-bottom: 48px;
+  }
+
+  .mobile-tel {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    color: #4d5ae5;
+  }
+
+  .mobile-mail {
+    font-size: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    color: #434455;
+  }
+
+  .mobile-icons {
+    display: flex;
+    align-items: center;
+    gap: 56px;
   }
 
   .hero {
@@ -102,10 +204,91 @@
     padding-bottom: 56px;
   }
 
-  .footer {
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 428px;
+    height: 664px;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--blue-color);
+    background: var(--second-color);
+    text-transform: uppercase;
+    margin-bottom: 17.5px;
+  }
+
+  .footer-p-soc {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    margin-bottom: 16px;
+  }
+
+  .subscribe-p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .subscribe-input {
+    width: 398px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: #ffffff;
+  }
+
+  .subscribe-button {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+    margin-top: 16px;
   }
 }
-
+/*------------------------------------------*/
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -152,7 +335,7 @@
     padding: 96px 0 96px 0;
   }
 }
-
+/*------------------------------------------*/
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
