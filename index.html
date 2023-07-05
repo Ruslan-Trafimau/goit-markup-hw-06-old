@@ -55,7 +55,7 @@
             </li>
           </ul>
         </address>
-        <button type="button" data-modal-open class="mobile-button">
+        <button type="button" data-menu-open class="mobile-button">
           <svg class="mobile-button-logo" width="32" height="22">
             <use href="./images/icons.svg#charm:menu-hamburger"></use>
           </svg>
@@ -132,7 +132,7 @@
           <h2 class="projects-h_two">What are we doing</h2>
           <ul class="projects-list list">
             <li class="projects-item">
-              <img
+              <img srcset="./images/img_s3-1.jpg 1x, ./images/img_s3-1-2x.jpg"
                 src="./images/img_s3-1.jpg"
                 alt="Desktop"
                 width="360"
@@ -140,7 +140,7 @@
               />
             </li>
             <li class="projects-item">
-              <img
+              <img srcset="./images/img_s3-2.jpg 1x, ./images/img_s3-2-2x.jpg"
                 src="./images/img_s3-2.jpg"
                 alt="Smartphones"
                 width="360"
@@ -148,7 +148,7 @@
               />
             </li>
             <li class="projects-item">
-              <img
+              <img srcset="./images/img_s3-3.jpg 1x, ./images/img_s3-3-2x.jpg"
                 src="./images/img_s3-3.jpg"
                 alt="Desktop and Smartphone"
                 width="360"
@@ -164,7 +164,7 @@
           <h2 class="our-team-h_two">Our Team</h2>
           <ul class="list our-team-images">
             <li class="list our-team-images-bkg">
-              <img
+              <img srcset="./images/img_s4-1.jpg 1x, ./images/img_s4-1-2x.jpg"
                 src="./images/img_s4-1.jpg"
                 alt="Mark Guerrero photo"
                 width="264"
@@ -229,7 +229,7 @@
               </div>
             </li>
             <li class="list our-team-images-bkg">
-              <img
+              <img srcset="./images/img_s4-2.jpg 1x, ./images/img_s4-2-2x.jpg"
                 src="./images/img_s4-2.jpg"
                 alt="Tom Ford photo"
                 width="264"
@@ -294,7 +294,7 @@
               </div>
             </li>
             <li class="list our-team-images-bkg">
-              <img
+              <img srcset="./images/img_s4-3.jpg 1x, ./images/img_s4-3-2x.jpg"
                 src="./images/img_s4-3.jpg"
                 alt="Camila Garcia photo"
                 width="264"
@@ -359,7 +359,7 @@
               </div>
             </li>
             <li class="list our-team-images-bkg">
-              <img
+              <img srcset="./images/img_s4-4.jpg 1x, ./images/img_s4-4-2x.jpg"
                 src="./images/img_s4-4.jpg"
                 alt="Daniel Wilson photo"
                 width="264"
@@ -509,6 +509,7 @@
 
     <footer class="footer">
       <div class="container footer-container">
+        <div class="f-tablet">
         <div class="f-logo">
           <a href="./index.html" class="footer-logo link"
             >Web<span class="studio">Studio</span></a
@@ -518,7 +519,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="soc-media-tablet">
           <p class="footer-p-soc">Social media</p>
           <ul class="footer-icons list">
             <li class="f-icon">
@@ -574,6 +575,7 @@
             </li>
           </ul>
         </div>
+        </div>
         <div class="subscribe">
           <p class="subscribe-p">Subscribe</p>
           <form class="subscribe-form">
@@ -585,18 +587,18 @@
                 placeholder="E-mail"
               />
             </label>
+            </form>
             <button class="subscribe-button" type="submit">
               Subscribe
               <svg class="subscribe-button-logo" width="24" height="24">
                 <use href="./images/icons.svg#icon-frame"></use>
               </svg>
             </button>
-          </form>
         </div>
       </div>
     </footer>
 
-    <!--
+
     <div data-modal class="modal is-hidden">
       <div class="modal-window">
         <button type="button" data-modal-close class="modal-button">
@@ -679,12 +681,10 @@
         </form>
       </div>
     </div>
-        -->
 
-    <!--------------------->
-    <div data-modal class="modal is-hidden">
+    <div data-menu class="modal is-hidden">
       <div class="mobile-modal-window">
-        <button type="button" data-modal-close class="modal-button">
+        <button type="button" data-menu-close class="modal-button">
           <svg class="modal-button-logo" width="8" height="8">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
@@ -778,6 +778,6 @@
     
 
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
